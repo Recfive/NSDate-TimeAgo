@@ -15,7 +15,7 @@
 
 #ifndef NSDateTimeAgoLocalizedStrings
 #define NSDateTimeAgoLocalizedStrings(key) \
-NSLocalizedStringFromTableInBundle(key, @"NSDateTimeAgo", [NSBundle bundleWithPath:[[[NSBundle bundleForClass:[DummyClass class]] resourcePath] stringByAppendingPathComponent:@"NSDateTimeAgo.bundle"]], nil)
+NSLocalizedStringFromTableInBundle(key, @"NSDateTimeAgo", [NSBundle mainBundle], nil)
 #endif
 
 // shows 1 or two letter abbreviation for units.
